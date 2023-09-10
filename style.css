@@ -59,3 +59,21 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+/* Estilos para telas médias */
+@media (max-width: 768px) {
+    .memory-game {
+       
+        grid-template-columns: repeat(2, 120px);
+    }
+
+    .card-front img, .card-back img {
+        max-width: 80%;
+        max-height: auto;
+    }
+
+    .card {
+        width: 150px;
+        height: 150px;
+    }
+}
