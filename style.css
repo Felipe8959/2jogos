@@ -60,7 +60,7 @@ body {
     object-fit: cover;
 }
 
-/* Estilos para telas médias */
+/* responsive para celular */
 @media (max-width: 768px) {
     .memory-game {
        
