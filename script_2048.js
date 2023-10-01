@@ -248,35 +248,68 @@ function moverDireita() {
 
 //Para android (touchscreen)
 
-let startX, startY;
+let touchStartX, touchStartY, touchEndX, touchEndY;
 
-function handleTouchStart(event) {
-    startX = event.touches[0].clientX;
-    startY = event.touches[0].clientY;
-}
+document.addEventListener('touchstart', (e) => {
+    touchStartX = e.touches[0].clientX;
+    touchStartY = e.touches[0].clientY;
+});
 
-function handleTouchEnd(event) {
-    const endX = event.changedTouches[0].clientX;
-    const endY = event.changedTouches[0].clientY;
+document.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].clientX;
+    touchEndY = e.changedTouches[0].clientY;
+    
+    const deltaX = touchEndX - touchStartX;
+    const deltaY = touchEndY - touchStartY;
 
-    const deltaX = endX - startX;
-    const deltaY = endY - startY;
+    // Defina um limite para considerar o gesto como um movimento válido
+    const minDelta = 50;
 
-    // Determine a direção do deslize e mova o jogo de acordo
-    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+    if (Math.abs(deltaX) > Math.abs(deltaY) && Math.abs(deltaX) > minDelta) {
+        // Movimento horizontal
         if (deltaX > 0) {
-            moveRight();
+            // Deslizar para a direita
+            if (moveRight()) {
+                addRandomTile();
+                updateGrid();
+                if (isGameOver()) {
+                    gameOverDiv.style.display = 'block';
+                }
+            }
         } else {
-            moveLeft();
+            // Deslizar para a esquerda
+            if (moveLeft()) {
+                addRandomTile();
+                updateGrid();
+                if (isGameOver()) {
+                    gameOverDiv.style.display = 'block';
+                }
+            }
         }
-    } else {
+    } else if (Math.abs(deltaY) > Math.abs(deltaX) && Math.abs(deltaY) > minDelta) {
+        // Movimento vertical
         if (deltaY > 0) {
-            moveDown();
+            // Deslizar para baixo
+            if (moveDown()) {
+                addRandomTile();
+                updateGrid();
+                if (isGameOver()) {
+                    gameOverDiv.style.display = 'block';
+                }
+            }
         } else {
-            moveUp();
+            // Deslizar para cima
+            if (moveUp()) {
+                addRandomTile();
+                updateGrid();
+                if (isGameOver()) {
+                    gameOverDiv.style.display = 'block';
+                }
+            }
         }
     }
-}
+});
+
 
 
 
