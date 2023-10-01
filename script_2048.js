@@ -248,15 +248,6 @@ function moverDireita() {
 
 //Para android (touchscreen)
 
-
-//desligar recarregamento de tela (deslizar para baixo)
-const gameContainer = document.querySelector('.game-container');
-
-gameContainer.addEventListener('touchmove', (event) => {
-    event.preventDefault();
-});
-
-
 //código:
 let touchStartX, touchStartY, touchEndX, touchEndY;
 
