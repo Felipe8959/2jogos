@@ -246,6 +246,39 @@ function moverDireita() {
     return moved;
 }
 
+//Para android (touchscreen)
+
+let startX, startY;
+
+function handleTouchStart(event) {
+    startX = event.touches[0].clientX;
+    startY = event.touches[0].clientY;
+}
+
+function handleTouchEnd(event) {
+    const endX = event.changedTouches[0].clientX;
+    const endY = event.changedTouches[0].clientY;
+
+    const deltaX = endX - startX;
+    const deltaY = endY - startY;
+
+    // Determine a direção do deslize e mova o jogo de acordo
+    if (Math.abs(deltaX) > Math.abs(deltaY)) {
+        if (deltaX > 0) {
+            moveRight();
+        } else {
+            moveLeft();
+        }
+    } else {
+        if (deltaY > 0) {
+            moveDown();
+        } else {
+            moveUp();
+        }
+    }
+}
+
+
 
 restartButton.addEventListener('click', () => {
     restartGame();
