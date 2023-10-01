@@ -9,6 +9,11 @@ body {
     margin: 5px auto;
 }
 
+.game-container {
+    overflow: hidden;
+}
+
+
 a{
     display: flex;
     text-align: left;
