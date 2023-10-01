@@ -250,11 +250,12 @@ function moverDireita() {
 
 
 //desligar recarregamento de tela (deslizar para baixo)
-const gameContainer = document.querySelector('.game-container');
-
-gameContainer.addEventListener('touchmove', (event) => {
-    event.preventDefault(); // Evita a rolagem padrão ao deslizar
+document.addEventListener('touchmove', (event) => {
+    if (event.target.closest('.game-container')) {
+        event.preventDefault();
+    }
 });
+
 
 //código:
 let touchStartX, touchStartY, touchEndX, touchEndY;
