@@ -269,7 +269,7 @@ document.addEventListener('touchend', (e) => {
         // Movimento horizontal
         if (deltaX > 0) {
             // Deslizar para a direita
-            if (moveRight()) {
+            if (moverDireita()) {
                 addRandomTile();
                 updateGrid();
                 if (isGameOver()) {
@@ -278,7 +278,7 @@ document.addEventListener('touchend', (e) => {
             }
         } else {
             // Deslizar para a esquerda
-            if (moveLeft()) {
+            if (moverEsquerda()) {
                 addRandomTile();
                 updateGrid();
                 if (isGameOver()) {
@@ -290,7 +290,7 @@ document.addEventListener('touchend', (e) => {
         // Movimento vertical
         if (deltaY > 0) {
             // Deslizar para baixo
-            if (moveDown()) {
+            if (moverBaixo()) {
                 addRandomTile();
                 updateGrid();
                 if (isGameOver()) {
@@ -299,7 +299,7 @@ document.addEventListener('touchend', (e) => {
             }
         } else {
             // Deslizar para cima
-            if (moveUp()) {
+            if (moverCima()) {
                 addRandomTile();
                 updateGrid();
                 if (isGameOver()) {
