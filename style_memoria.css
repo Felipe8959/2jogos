@@ -1,10 +1,14 @@
-body {
+a{
+    display: flex;
+    text-align: left;
+}
+
+.container{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #ffffff;
 }
 
 .memory-game {
@@ -63,7 +67,6 @@ body {
 /* responsive para celular */
 @media (max-width: 768px) {
     .memory-game {
-       
         grid-template-columns: repeat(2, 120px);
     }
 
