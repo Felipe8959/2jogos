@@ -311,6 +311,15 @@ document.addEventListener('touchend', (e) => {
     }
 });
 
+const container = document.getElementById('container'); // Substitua 'seu-container' pelo ID do seu container
+
+container.addEventListener('touchstart', function (e) {
+    e.preventDefault();
+});
+
+container.addEventListener('touchmove', function (e) {
+    e.preventDefault();
+});
 
 
 
