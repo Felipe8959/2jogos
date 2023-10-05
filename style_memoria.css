@@ -1,13 +1,31 @@
+body{
+    background-color: #dddddd;
+}
+
 a{
     display: flex;
     text-align: left;
+    color: #3a3a3a;
+}
+
+.home {
+    width: 30px;
+    height:auto;
+    border: none;
+}
+
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #838383;
+    font-family: 'Lato', sans-serif;
 }
 
 .container{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     margin: 0;
 }
 

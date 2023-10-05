@@ -2,6 +2,7 @@ body {
     font-family: Arial, sans-serif;
     text-align: center;
     color: rgb(255, 255, 255);
+    background-color: #352f3d;
 }
 
 .container {
@@ -16,11 +17,14 @@ body {
 a{
     display: flex;
     text-align: left;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
 }
 
 h1 {
     font-size: 40px;
-    color: #564e5f;
+    color: #9d98a3;
 }
 
 .grid-container {
