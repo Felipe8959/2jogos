@@ -311,7 +311,7 @@ document.addEventListener('touchend', (e) => {
     }
 });
 
-const container = document.getElementById('container'); // Substitua 'seu-container' pelo ID do seu container
+const container = document.getElementById('grid-container');
 
 container.addEventListener('touchstart', function (e) {
     e.preventDefault();
