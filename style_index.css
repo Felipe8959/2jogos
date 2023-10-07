@@ -3,7 +3,6 @@ body, h1, p, a {
     padding: 0;
 }
 
-/* Estilização da área de vídeo de fundo */
 .video-background {
     position: relative;
     width: 100%;
@@ -22,7 +21,6 @@ video {
     filter: brightness(0.3);
 }
 
-/* Estilização da área de conteúdo */
 .container {
     position: relative;
     text-align: center;

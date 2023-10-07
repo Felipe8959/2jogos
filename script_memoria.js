@@ -16,7 +16,7 @@ function flipCard() {
 
                 if (matchedCards.length === cards.length) {
                     setTimeout(() => {
-                        alert('Parabéns');
+                        alert('Parabéns, você venceu');
                     }, 500);
                 }
             } else {
