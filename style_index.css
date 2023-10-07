@@ -29,10 +29,15 @@ video {
     z-index: 1;
     background: transparent;
     padding: 20px;
-    padding-top: 10%;
+    padding-top: 7%;
     border-radius: 10px;
     margin: 20px;
     font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 100px;
+    height: auto;
 }
 
 h1 {
@@ -67,6 +72,6 @@ a.jogar:hover {
 
 @media (max-width: 760px){
     .container{
-        margin-top: 35%;
+        margin-top: 25%;
     }
 }
