@@ -44,7 +44,7 @@ function updateGrid() {
 function getCellColor(value) {
     //defiine as cores dos cards
     switch (value) {
-        case 2: return '#85449e';
+        case 2: return '#595064';
         case 4: return '#5e9188';
         case 8: return '#3e5954';
         case 16: return '#253342';
