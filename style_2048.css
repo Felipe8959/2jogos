@@ -24,7 +24,7 @@ a{
 
 h1 {
     font-size: 40px;
-    color: #9d98a3;
+    color: #898591;
 }
 
 .grid-container {
@@ -35,8 +35,8 @@ h1 {
 }
 
 .grid-cell {
-    width: 100px;
-    height: 100px;
+    width: auto;
+    height: 90px;
     background-color: #474747;
     text-align: center;
     line-height: 100px;
@@ -68,4 +68,15 @@ button:hover{
 
 p{
     color: #474747;
+}
+
+/* responsive para celular */
+@media (max-width: 768px) {
+    h1{
+        margin-top: 20%;
+    }
+    .container {
+        max-width: auto;
+
+    }
 }

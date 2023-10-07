@@ -80,17 +80,22 @@ h1{
 
 /* responsive para celular */
 @media (max-width: 768px) {
+    h1{
+        margin-top: 10%;
+        font-size: 20px;
+    }
+
     .memory-game {
         grid-template-columns: repeat(2, 120px);
     }
 
     .card-front img, .card-back img {
-        max-width: 80%;
-        max-height: auto;
+        max-width: auto;
+        max-height: 90%;
     }
 
     .card {
-        width: 150px;
+        width: auto;
         height: 150px;
     }
 }

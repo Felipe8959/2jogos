@@ -42,8 +42,7 @@ function updateGrid() {
 }
 
 function getCellColor(value) {
-    // Defina cores diferentes para valores diferentes
-    // Você pode personalizar as cores de acordo com sua preferência.
+    //defiine as cores dos cards
     switch (value) {
         case 2: return '#595064';
         case 4: return '#5e9188';
@@ -61,21 +60,21 @@ function getCellColor(value) {
 }
 
 function isGameOver() {
-    // Verificar se ainda há células vazias na grade
+    //verifica se ainda há células vazias na grade
     for (let i = 0; i < gridSize; i++) {
         for (let j = 0; j < gridSize; j++) {
             if (grid[i][j] === 0) {
-                return false; // Ainda há células vazias, o jogo não acabou
+                return false; //ainda há células vazias
             }
         }
     }
 
-    // Verificar se ainda há combinações possíveis entre números adjacentes
+    //verifica se ainda há combinações possíveis entre números próximos
     for (let i = 0; i < gridSize; i++) {
         for (let j = 0; j < gridSize; j++) {
             const currentValue = grid[i][j];
 
-            // Verificar células vizinhas (acima, abaixo, esquerda, direita)
+            //verifica células próximas
             const neighbors = [
                 { row: i - 1, col: j },
                 { row: i + 1, col: j },
@@ -90,14 +89,14 @@ function isGameOver() {
                 if (row >= 0 && row < gridSize && col >= 0 && col < gridSize) {
                     const neighborValue = grid[row][col];
                     if (currentValue === neighborValue) {
-                        return false; // Ainda há combinações possíveis
+                        return false; //ainda há combinações
                     }
                 }
             }
         }
     }
 
-    return true; // Se não houver células vazias nem combinações possíveis, o jogo acabou
+    return true; //se não houver células vazias nem combinações, fim de jogo
 }
 
 
@@ -146,14 +145,14 @@ function moverCima() {
             if (grid[row][col] !== 0) {
                 let newRow = row - 1;
                 while (newRow >= 0 && grid[newRow][col] === 0) {
-                    // Move a célula para cima
+                    //move para cima
                     grid[newRow][col] = grid[newRow + 1][col];
                     grid[newRow + 1][col] = 0;
                     newRow--;
                     moved = true;
                 }
                 if (newRow >= 0 && grid[newRow][col] === grid[row][col]) {
-                    // Combina as células quando são iguais
+                    //faz a combinação, quando iguais
                     grid[newRow][col] *= 2;
                     grid[row][col] = 0;
                     moved = true;
@@ -173,14 +172,14 @@ function moverBaixo() {
             if (grid[row][col] !== 0) {
                 let newRow = row + 1;
                 while (newRow < gridSize && grid[newRow][col] === 0) {
-                    // Move a célula para baixo
+                    //move para baixo
                     grid[newRow][col] = grid[newRow - 1][col];
                     grid[newRow - 1][col] = 0;
                     newRow++;
                     moved = true;
                 }
                 if (newRow < gridSize && grid[newRow][col] === grid[row][col]) {
-                    // Combina as células quando são iguais
+                    //faz a combinação, quando iguais
                     grid[newRow][col] *= 2;
                     grid[row][col] = 0;
                     moved = true;
@@ -200,14 +199,14 @@ function moverEsquerda() {
             if (grid[row][col] !== 0) {
                 let newCol = col - 1;
                 while (newCol >= 0 && grid[row][newCol] === 0) {
-                    // Move a célula para a esquerda
+                    //move para baixo
                     grid[row][newCol] = grid[row][newCol + 1];
                     grid[row][newCol + 1] = 0;
                     newCol--;
                     moved = true;
                 }
                 if (newCol >= 0 && grid[row][newCol] === grid[row][col]) {
-                    // Combina as células quando são iguais
+                    //faz a combinação, quando iguais
                     grid[row][newCol] *= 2;
                     grid[row][col] = 0;
                     moved = true;
@@ -227,14 +226,14 @@ function moverDireita() {
             if (grid[row][col] !== 0) {
                 let newCol = col + 1;
                 while (newCol < gridSize && grid[row][newCol] === 0) {
-                    // Move a célula para a direita
+                    //move para baixo
                     grid[row][newCol] = grid[row][newCol - 1];
                     grid[row][newCol - 1] = 0;
                     newCol++;
                     moved = true;
                 }
                 if (newCol < gridSize && grid[row][newCol] === grid[row][col]) {
-                    // Combina as células quando são iguais
+                    //faz a combinação, quando iguais
                     grid[row][newCol] *= 2;
                     grid[row][col] = 0;
                     moved = true;
@@ -246,9 +245,8 @@ function moverDireita() {
     return moved;
 }
 
-//Para android (touchscreen)
+//para android (touchscreen)
 
-//código:
 let touchStartX, touchStartY, touchEndX, touchEndY;
 
 document.addEventListener('touchstart', (e) => {
@@ -311,16 +309,18 @@ document.addEventListener('touchend', (e) => {
     }
 });
 
+
+//travar tela quando interagir com o container
 const container = document.getElementById('grid-container');
 
 container.addEventListener('touchstart', function (e) {
     e.preventDefault();
 });
 
+
 container.addEventListener('touchmove', function (e) {
     e.preventDefault();
 });
-
 
 
 restartButton.addEventListener('click', () => {
