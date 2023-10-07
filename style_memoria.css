@@ -4,10 +4,12 @@ body{
 }
 
 a{
-    text-align: center;
+    display: flex;
     color: #727272;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
+    justify-content: center;
+    align-items: center;
 }
 
 .container{
