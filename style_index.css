@@ -64,3 +64,9 @@ a.jogar:hover {
     background-color: #ffffff;
     color: black;
 }
+
+@media (max-width: 760px){
+    .container{
+        margin-top: 50%;
+    }
+}
