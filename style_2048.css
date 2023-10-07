@@ -1,13 +1,13 @@
 body {
     font-family: Arial, sans-serif;
-    text-align: center;
     color: rgb(255, 255, 255);
-    background-color: #352f3d;
+    background-color: #cecece;
 }
 
 .container {
     max-width: 400px;
     margin: 5px auto;
+    padding: 20px;
 }
 
 .game-container {
@@ -15,16 +15,16 @@ body {
 }
 
 a{
-    display: flex;
     text-align: left;
-    color: #ffffff;
+    color: #727272;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
 
 h1 {
+    text-align: center;
     font-size: 40px;
-    color: #898591;
+    color: #474747;
 }
 
 .grid-container {

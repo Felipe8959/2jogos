@@ -3,8 +3,7 @@ body{
 }
 
 a{
-    display: flex;
-    text-align: left;
+    text-align: center;
     color: #727272;
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
@@ -15,7 +14,7 @@ a{
     justify-content: center;
     align-items: center;
     height: 70vh;
-    margin: 0;
+    margin-top: 5%;
 }
 
 .memory-game {
@@ -62,21 +61,8 @@ a{
     max-height: 100%;
 }
 
-#background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
 /* responsive para celular */
 @media (max-width: 768px) {
-    .container{
-        margin: 20%;
-    }
-
     .memory-game {
         grid-template-columns: repeat(2, 120px);
     }
