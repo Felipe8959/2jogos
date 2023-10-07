@@ -1,5 +1,6 @@
 body{
     background-color: #dddddd;
+    padding: 20px;
 }
 
 a{
@@ -63,6 +64,9 @@ a{
 
 /* responsive para celular */
 @media (max-width: 768px) {
+    .container{
+        margin-top: 10%;
+    }
     .memory-game {
         grid-template-columns: repeat(2, 120px);
     }
