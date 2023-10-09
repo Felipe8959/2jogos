@@ -14,18 +14,18 @@ Nosso projeto consiste em um site que oferece acesso a dois jogos interativos cr
 
 1. **Home page - [2jogos](https://2jogos-eight.vercel.app/)**
 
-   ![Versão desktop](source/print_home.jpeg)
-   ![Versão mobile](source/print_home_mobile.jpeg)
+   ![Versão desktop](source/print_home.jpg)
+   ![Versão mobile](source/print_home_mobile.jpg)
 
 2. **Jogo 1 - [2048](https://2jogos-eight.vercel.app/2048.html)**
 
-   ![Versão desktop](source/print_2048.jpeg)
-   ![Versão mobile](source/print_2048_mobile.jpeg)
+   ![Versão desktop](source/print_2048.jpg)
+   ![Versão mobile](source/print_2048_mobile.jpg)
 
 3. **Jogo 2 - [Jogo da memória](https://2jogos-eight.vercel.app/memoria.html)**
 
-   ![Versão desktop](source/print_memoria.jpeg)
-   ![Versão mobile](source/print_memoria_mobile.jpeg)
+   ![Versão desktop](source/print_memoria.jpg)
+   ![Versão mobile](source/print_memoria_mobile.jpg)
 
 ## Autores
 
