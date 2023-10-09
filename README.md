@@ -1,6 +1,6 @@
 # Projeto 5º Semestre - Ciências da Computação UNINOVE
 
-![UNINOVE Logo](https://docs.uninove.br/arte/links/uninovevoxy/assets/images/parallax/layer8.png)
+![UNINOVE Logo](https://seeklogo.com/images/U/uninove-logo-6712B4DCC4-seeklogo.com.png)
 
 ## Disciplina: Projeto de Sistemas Interativos
 
@@ -14,18 +14,18 @@ Nosso projeto consiste em um site que oferece acesso a dois jogos interativos cr
 
 1. **Home page - [2jogos](https://2jogos-eight.vercel.app/)**
 
-   ![Versão desktop](source/print_home.png)
-   ![Versão mobile](source/print_home_mobile.png)
+   ![Versão desktop](source/print_home.jpeg)
+   ![Versão mobile](source/print_home_mobile.jpeg)
 
 2. **Jogo 1 - [2048](https://2jogos-eight.vercel.app/2048.html)**
 
-   ![Versão desktop](source/print_2048.png)
-   ![Versão mobile](source/print_2048_mobile.png)
+   ![Versão desktop](source/print_2048.jpeg)
+   ![Versão mobile](source/print_2048_mobile.jpeg)
 
 3. **Jogo 2 - [Jogo da memória](https://2jogos-eight.vercel.app/memoria.html)**
 
-   ![Versão desktop](source/print_memoria.png)
-   ![Versão mobile](source/print_memoria_mobile.png)
+   ![Versão desktop](source/print_memoria.jpeg)
+   ![Versão mobile](source/print_memoria_mobile.jpeg)
 
 ## Autores
 
