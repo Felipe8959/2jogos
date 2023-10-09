@@ -1,6 +1,6 @@
 # Projeto 5º Semestre - Ciências da Computação UNINOVE
 
-![UNINOVE Logo](https://www.uninove.br/wp-content/uploads/2018/05/UNINOVE_-BRANCA.png)
+![UNINOVE Logo](https://docs.uninove.br/arte/links/uninovevoxy/assets/images/parallax/layer8.png)
 
 ## Disciplina: Projeto de Sistemas Interativos
 
